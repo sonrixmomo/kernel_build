@@ -65,5 +65,5 @@ jobs:
       - name: Upload kernel to artifact
         uses: actions/upload-artifact@v3
         with:
-          name: ${{ env.KERNEL_VERSION }}
+          name: ${{ env.KERNEL_VERSION }}_${{ env.KERNEL_TARGET }}
           path: AnyKernel3/*
